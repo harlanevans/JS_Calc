@@ -1,24 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  background-color: #9D226B
+  background-color: #9d226b;
 }
 
 header {
-  background: #21124D;
+  background: #21124d;
   padding: 20px;
 }
 
-header>h1 {
+header > h1 {
   color: white;
   text-align: center;
+}
+
+
+.calc {
+  background: #21124d;
+  font-size: 28px;
+  margin: 1em auto;
+  width: 15em;
+  padding: 1em;
+  border: 0.5px solid #ffa883;
+  border-radius: 10%;
+}
+
+.viewer {
+  background: white;
+  text-align: right;
+  margin: 0.5em auto;
+  float: right;
+  width: 8em;
+  height: 1em;
+  line-height: 1em;
+  text-overflow: ellipsis;
+}
+
+button {
+  font-size: 28px;
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+  border-radius: 25%;
+  border: 0;
+  transition: all 1s;
 }
 
 .num {
@@ -28,50 +60,25 @@ header>h1 {
   transition: all 1s;
 }
 
-
-.calc {
-  background: #21124D;
-  font-size: 28px;
-  margin: 1em auto;
-  width: 15em;
-  padding: 1em;
-  border: .5px solid #FFA883;
-  border-radius: 10%;
-}
-
-.viewer {
-  background: white;
-  text-align: right;
-  margin: 0 auto;
-  /* float: left; */
-  width: 11em;
-  line-height: 1em;
-  text-overflow: ellipsis;
-
-}
-
-button {
-  font-size: 28px;
-  width: 2em;
-  height: 2em;
-  margin: .5em;
-  border-radius: 25%;
-  border: 0;
-  transition: all 1s;
-}
-
-
-.clear {
+.clearCalc {  
   color: white;
-  background-color: #FF1F62
+  background-color: #ff1f62;
+  float: left;
 }
 
 .ops {
   color: white;
-  background: #FE7EFF;
+  background: #fe7eff;
 }
 
 .equals {
   color: white;
-  background: #5B2EAA;
+  background: #5b2eaa;
+}
+
+.top-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-around;
+  align-items: inherit;
 }
